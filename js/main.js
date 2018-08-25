@@ -234,7 +234,7 @@ $(function () {
 
 /* Google Map Options */
 function initMap() {
-	var myLatlng = new google.maps.LatLng(40.773328,-73.960088); // <- Your latitude and longitude
+	var myLatlng = new google.maps.LatLng(37.3860194,-5.942189900000017); // <- Your latitude and longitude
 	var styles = [
 	{
 		"featureType": "water",
@@ -289,17 +289,17 @@ function initMap() {
 	{
 		"featureType": "poi",
 		"stylers": [{
-			"visibility": "off"
+			"visibility": "on"
 		}]
 	}]
 
 	var mapOptions = {
-		zoom: 14,
+		zoom: 12,
 		center: myLatlng,
 		mapTypeControl: false,
 		disableDefaultUI: true,
 		zoomControl: true,
-		scrollwheel: false,
+		scrollwheel: true,
 		styles: styles
 	}
 	
